@@ -9,15 +9,20 @@ public class InitialPartUI : MonoBehaviour
     [SerializeField] private RectTransform _foguete2;
     [SerializeField] private RectTransform _startButton;
     [SerializeField] private Vector3[] _fogueteEndPositions = new Vector3[2];
-    private float _animationTime => UIController._animationTime;
-    private float _initialWaitTime => UIController._initialWaitTime;
+    private float _animationTime;
     private Button b_start;
-
+    private float _initialWaitTime => UIController._initialWaitTime;
+    
     private UIController _uiController => UIController.I;
     private void Awake()
     {
         b_start = _startButton.GetComponent<Button>();
         b_start.onClick.AddListener(StartGameUI);
+    }
+
+    private void Start()
+    {
+        _animationTime = _uiController._animationTime;
     }
 
     private void StartGameUI()
