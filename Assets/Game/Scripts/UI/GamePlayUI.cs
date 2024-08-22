@@ -32,11 +32,11 @@ public class GamePlayUI : MonoBehaviour
     {
         _timerCG.DOFade(1, _animationTime);
         _moveChoiceText.DOFade(1, _animationTime);
-        _bottomButtons.DOAnchorPosY(0, _animationTime);
-        _topRightSide.DOAnchorPosX(0, _animationTime);
-        _topLeftSide.DOAnchorPosX(0, _animationTime);
-        _handLeft.DOAnchorPosX(0, _animationTime);
-        _handRight.DOAnchorPosX(0, _animationTime);
+        _bottomButtons.DOAnchorPosY(-250, _animationTime);
+        _topRightSide.DOAnchorPosX(-20, _animationTime);
+        _topLeftSide.DOAnchorPosX(20, _animationTime);
+        _handLeft.DOAnchorPosX(-120, _animationTime);
+        _handRight.DOAnchorPosX(-64, _animationTime);
     }
 
 }

@@ -104,7 +104,7 @@ public class TimeCountManager : Singleton<TimeCountManager>
         int minutes = (int)_currentTime / 60;
         int seconds = (int)_currentTime - minutes * 60;
         t_time.text = string.Format("{0}", seconds);
-        im_outerCircle.fillAmount = (_startTime - seconds) / _startTime;
+        im_outerCircle.fillAmount = 1 - ((_startTime - seconds) / _startTime);
     }
 
     #endregion
