@@ -95,10 +95,26 @@ PrefabInstance:
     - target: {fileID: 6002517344974687503, guid: f0ea00c1290e89340994a23303206eaa, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 37dd518f8b203404fa95bb7e5726e340, type: 3}
+      objectReference: {fileID: 21300000, guid: 3be31687e24fd6f4f9888ece4677845f, type: 3}
     - target: {fileID: 6002517344974687503, guid: f0ea00c1290e89340994a23303206eaa, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158397584902801169, guid: f0ea00c1290e89340994a23303206eaa, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158397584902801169, guid: f0ea00c1290e89340994a23303206eaa, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158397584902801169, guid: f0ea00c1290e89340994a23303206eaa, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158397584902801169, guid: f0ea00c1290e89340994a23303206eaa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 8918981252006746579, guid: f0ea00c1290e89340994a23303206eaa, type: 3}
       propertyPath: m_Name

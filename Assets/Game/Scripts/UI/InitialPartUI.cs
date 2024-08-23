@@ -7,6 +7,8 @@ public class InitialPartUI : MonoBehaviour
     [SerializeField] private RectTransform _logo;
     [SerializeField] private RectTransform _foguete1;
     [SerializeField] private RectTransform _foguete2;
+    [SerializeField] private RectTransform _meteoro1;
+    [SerializeField] private RectTransform _meteoro2;
     [SerializeField] private RectTransform _startButton;
     [SerializeField] private Vector3[] _fogueteEndPositions = new Vector3[2];
     private float _animationTime;
@@ -30,6 +32,8 @@ public class InitialPartUI : MonoBehaviour
         b_start.enabled = false;
         _startButton.DOAnchorPosY(-400, _animationTime).OnComplete(StartGameUIContinue);
         _logo.DOLocalMoveY(0, _animationTime);
+        _meteoro1.DOLocalMoveX(330, _animationTime);
+        _meteoro2.DOLocalMoveX(-220, _animationTime);
         _foguete1.DOAnchorPos(_fogueteEndPositions[0], _animationTime / 2);
         _foguete2.DOAnchorPos(_fogueteEndPositions[1], 3 * (_animationTime / 4)).SetDelay(_animationTime / 4);
         _uiController.MoveInitialUI();

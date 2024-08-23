@@ -17,7 +17,7 @@ public class ButtonJogada : MonoBehaviour
     }
     private void ChooseMove()
     {
-        rt.DOScale(1.1f, UIController.I._animationTime / 2);
         b_this.Select();
+        rt.DOScale(1.1f, UIController.I._animationTime / 3);
     }
 }
